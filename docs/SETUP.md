@@ -74,7 +74,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 
 # Add upstream remote to get future updates
-git remote add upstream <instructor-repo-url>
+git remote add upstream <your-respository-url>
 ```
 
 ### Step 5: Test Your Setup
