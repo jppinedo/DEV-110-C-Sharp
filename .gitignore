@@ -82,3 +82,7 @@ Desktop.ini
 
 # Sensitive files (keep student work private)
 **/solution/
+
+# Exception: Allow solution directories in labs
+!labs/**/solution/
+
