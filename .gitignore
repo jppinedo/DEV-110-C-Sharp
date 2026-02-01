@@ -80,9 +80,15 @@ Desktop.ini
 .vscode/launch.json.local
 .vscode/tasks.json.local
 
-# Sensitive files (keep student work private)
+# GitHub files
+.github
+
+# Sensitive files
 **/solution/
 
-# Exception: Allow solution directories in labs
+# Exception: Allow only Program.cs and .csproj files in labs solution folders
 !labs/**/solution/
+labs/**/solution/**
+!labs/**/solution/Program.cs
+!labs/**/solution/*.csproj
 

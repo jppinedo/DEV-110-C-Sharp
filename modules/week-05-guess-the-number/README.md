@@ -14,6 +14,14 @@ Build a simple “Guess the Number” game that uses all three loop types (`whil
 
 ---
 
+## Resources
+
+- [C# While and Do-While Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement)
+- [C# For Loop](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-for-statement)
+- [Random Class](https://learn.microsoft.com/en-us/dotnet/api/system.random)
+
+---
+
 ## Assignment Requirements
 
 Update a console program that follows this flow:
@@ -180,9 +188,3 @@ while (guess != secret)
 - Add simple ASCII art
 
 ---
-
-## Resources
-
-- [C# While and Do-While Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement)
-- [C# For Loop](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-for-statement)
-- [Random Class](https://learn.microsoft.com/en-us/dotnet/api/system.random)
