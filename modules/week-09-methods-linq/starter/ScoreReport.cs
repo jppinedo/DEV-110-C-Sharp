@@ -95,7 +95,7 @@ internal class ScoreReport
     // - Print exactly: Sorted (asc): 10, 20, 30
     private void PrintScoresSorted()
     {
-        var sorted = _scores.OrderBy(score => score);
+        IOrderedEnumerable<int> sorted = _scores.OrderBy(score => score);
         string formatted = string.Join(", ", sorted);
         Console.WriteLine($"Sorted (asc): {formatted}");
     }
@@ -107,7 +107,7 @@ internal class ScoreReport
     // - Print exactly: Top X: 30, 20, 10
     private void PrintTopScores(int topCount)
     {
-        var top = _scores
+        IEnumerable<int> top = _scores
             .OrderByDescending(score => score)
             .Take(topCount);
 
@@ -122,7 +122,7 @@ internal class ScoreReport
     // - Print exactly: Passing scores (desc): 30, 20
     private void PrintPassingScores()
     {
-        var passingScores = _scores
+        IOrderedEnumerable<int> passingScores = _scores
             .Where(score => score >= Threshold)
             .OrderByDescending(score => score);
 
@@ -137,7 +137,7 @@ internal class ScoreReport
     // - Print exactly: Failing scores (desc): 10
     private void PrintFailingScores()
     {
-        var failingScores = _scores
+        IOrderedEnumerable<int> failingScores = _scores
             .Where(score => score < Threshold)
             .OrderByDescending(score => score);
 
